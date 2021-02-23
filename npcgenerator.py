@@ -85,10 +85,16 @@ def npcgen():
         reader = csv.reader(f)
         highability = random.choice(list(reader))
 
-    with open("./traitslists/lowabilities.csv") as f:
-        reader = csv.reader(f)
-        lowability = random.choice(list(reader))
-
+    dupcheck = True
+    while dupcheck:
+        with open("./traitslists/lowabilities.csv") as f:
+            reader = csv.reader(f)
+            lowability = random.choice(list(reader))
+            if str(lowability).split()[0] == str(highability).split()[0]:
+                continue
+            else:
+                dupcheck = False
+                
     with open("./traitslists/talents.csv") as f:
         reader = csv.reader(f)
         talent = random.choice(list(reader))
