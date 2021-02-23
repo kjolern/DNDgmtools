@@ -1,0 +1,1 @@
+This project is a simple cli tool for dungeon masters that need a simple dice tool, npc generator and villain generator.
