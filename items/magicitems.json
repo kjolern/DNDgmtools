@@ -1,0 +1,18 @@
+{
+    "items":[
+        {
+            "name": "oter",
+            "price": "200",
+            "rarity": "rare",
+            "type": "weapon",
+            "link": "https://www.dndbeyond.com"
+        },
+        {
+            "name": "grevling",
+            "price": "304",
+            "rarity": "rare",
+            "type": "weapon",
+            "link": "https://www.dndbeyond.com"
+        }
+    ]
+}
