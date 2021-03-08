@@ -1,7 +1,9 @@
-FROM python:3.8-slim-buster
+FROM python:3.9
 
 WORKDIR /DNDgmtools
 
 COPY . /DNDgmtools
 
-CMD ["python3", "./main.py"]
+RUN apt install git
+
+CMD ["python3", "main.py"]
